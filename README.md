@@ -1,5 +1,7 @@
 ## Galvanize Memory
 
+https://memory-2.herokuapp.com/coffees
+
 You're making an API that can list, create, read, update, and delete a collection of coffee. The problem is that you're missing a critical part of the API-- the database! Create a database for this API, and interface with it via [Knex.js](https://knexjs.org).
 
 ### Setup
@@ -11,38 +13,37 @@ Make a local database and setup a `knexfile` to connect to it.
 Make a migration that creates the following database table:
 
 `coffee`
-| key | name       | data type                 |
+| key | name | data type |
 | --- | ---------- | ------------------------- |
-| PK  | id         | auto-incrementing integer |
-|     | name       | text                      |
-|     | roaster    | text                      |
-|     | aroma      | integer                   |
+| PK | id | auto-incrementing integer |
+| | name | text |
+| | roaster | text |
+| | aroma | integer |
 
 ### Seed
 
 Seed your database with some data:
 
-| field      | value             |
-| ---------- | ----------------- |
-| id         | 1                 |
-| name       | Black and Tan     |
-| roaster    | Ink               |
-| aroma      | 3                 |
+| field   | value         |
+| ------- | ------------- |
+| id      | 1             |
+| name    | Black and Tan |
+| roaster | Ink           |
+| aroma   | 3             |
 
-| field      | value             |
-| ---------- | ----------------- |
-| id         | 2                 |
-| name       | Holiday Roast     |
-| roaster    | Starbucks         |
-| aroma      | 9                 |
+| field   | value         |
+| ------- | ------------- |
+| id      | 2             |
+| name    | Holiday Roast |
+| roaster | Starbucks     |
+| aroma   | 9             |
 
-| field      | value             |
-| ---------- | ----------------- |
-| id         | 3                 |
-| name       | House Quake       |
-| roaster    | Denver Coffee     |
-| aroma      | 6                 |
-
+| field   | value         |
+| ------- | ------------- |
+| id      | 3             |
+| name    | House Quake   |
+| roaster | Denver Coffee |
+| aroma   | 6             |
 
 Make sure your next auto-incrementing integer starts with `4`!
 
